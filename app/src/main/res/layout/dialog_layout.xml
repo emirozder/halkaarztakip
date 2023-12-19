@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_constraintLayout"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogLayout"
+        android:background="@drawable/edittext_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogText"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Çıkış yapmak istediğinize emin misiniz?"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="@id/dialogLayout"
+            app:layout_constraintStart_toStartOf="@id/dialogLayout"
+            app:layout_constraintEnd_toEndOf="@id/dialogLayout"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/dialogText"
+            app:layout_constraintEnd_toEndOf="@id/dialogText"
+            app:layout_constraintBottom_toBottomOf="@id/dialogLayout"
+            app:layout_constraintTop_toBottomOf="@id/dialogText"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_btn_evet"
+                android:layout_marginEnd="20dp"
+                android:text="Evet"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@drawable/details_txt_bg"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_btn_hayir"
+                android:layout_marginStart="20dp"
+                android:text="Hayır"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@drawable/details_txt_bg"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/dialog_image"
+        android:src="@drawable/round_question_mark_24"
+        android:background="@drawable/dialog_shape"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dialogLayout"
+        app:layout_constraintBottom_toTopOf="@id/dialogLayout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

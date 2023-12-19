@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "388286778073",
+    "project_id": "halka-arz-takip",
+    "storage_bucket": "halka-arz-takip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388286778073:android:b25ea9921e824b7bfa0cc8",
+        "android_client_info": {
+          "package_name": "com.example.halkaarztakip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2gZC06qe3Ub_ee9cLulNGaJa2qjMYb6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
